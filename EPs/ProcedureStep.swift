@@ -1,7 +1,7 @@
 import Foundation
 
 class ProcedureStep {
-    
+    //new comment
     //MARK: properties
     var type: String
     var step: String
