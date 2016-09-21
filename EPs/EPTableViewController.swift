@@ -103,22 +103,15 @@ class EPTableViewController: UITableViewController, UINavigationControllerDelega
         //clearsSelectionOnViewWillAppear = true
         super.viewWillAppear(animated)
         loadTab()
-        //tableView.reloadData()
+
     }
     fileprivate func configureTableView(){
-        
-        // tableView.sectionIndexColor = UIColor.darkTextColor()
-        //tableView.sectionIndexBackgroundColor = UIColor.yellowColor().colorWithAlphaComponent(0.2)
         tableView.sectionIndexMinimumDisplayRowCount = 20
         tableView.sectionIndexTrackingBackgroundColor = UIColor.white
         tableView.sectionIndexColor = UIColor.black
-        //tableView.sectionHeaderHeight = 17
-        tableView.separatorColor = UIColor.black
-        //tableView.backgroundColor = UIColor.yellowColor().colorWithAlphaComponent(0.5)
-        
-        //tableView.backgroundView = nil
-        //tableView.backgroundColor = UIColor.greenColor()
-        //tableView.layer.cornerRadius = 150
+        self.view.backgroundColor = UIColor.epYellow()
+        //tableView.separatorStyle = .none
+
     }
     
     override func viewDidLoad() {
@@ -148,28 +141,22 @@ class EPTableViewController: UITableViewController, UINavigationControllerDelega
         return 2
     }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        //tableView.backgroundColor = UIColor.yellow
+        cell.backgroundColor = UIColor.clear
     }
-    /* override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-     if(!EmergencyProceduresByLetter[section].isEmpty) {
-     return String(mySectionIndexTitles[section])
-     }
-     else { return nil }
-     }*/
-    
+
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.EpCellIndentifier, for: indexPath) as! EPTableViewCell
         
         let emergencyProcedure = EmergencyProceduresByLetter[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
-        
-        //cell.backgroundColor = UIColor.yellowColor().colorWithAlphaComponent(0.5)
         cell.epName.text = emergencyProcedure.title
         cell.epName.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
         cell.layer.borderColor = UIColor.black.cgColor
         
         return cell
     }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

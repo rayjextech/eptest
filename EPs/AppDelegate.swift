@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        // navigationBarAppearace.tintColor = UIColor.epComplement()
+        navigationBarAppearace.barTintColor = UIColor.black
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+
+        
         return true
     }
 
@@ -40,7 +49,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
+
+extension UIColor {
+    static func epYellow() -> UIColor {
+        return UIColor(red: 253.0/255.0, green: 255.0/255.0, blue: 130.0/255.0, alpha: 1.0)
+    }
+    static func epComplement() -> UIColor {
+        return UIColor(red: 132.0/255.0, green: 130.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    }
+}
+
 
