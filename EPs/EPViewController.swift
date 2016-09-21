@@ -40,6 +40,12 @@ class EPViewController: UITableViewController {
             cell.memoryLabel.text = ep?.steps[(indexPath as NSIndexPath).row].step
             //print(ep?.steps[(indexPath as NSIndexPath).row].step)
             cellToReturn = cell
+            
+        case "logic":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "logic", for: indexPath) as! LogicCell
+            cell.logicLabel.text = ep?.steps[(indexPath as NSIndexPath).row].step
+            //print(ep?.steps[(indexPath as NSIndexPath).row].step)
+            cellToReturn = cell
        
             
         default: break
@@ -48,5 +54,3 @@ class EPViewController: UITableViewController {
      return cellToReturn!
     }
 }
-
-

@@ -20,6 +20,7 @@
 		3BC5290C1D133BB700D14D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC5290A1D133BB700D14D8C /* LaunchScreen.storyboard */; };
 		3BF73E591D7F8208002132CD /* ProcedureStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF73E581D7F8208002132CD /* ProcedureStep.swift */; };
 		3BF9BA441D1C5AD4007704A0 /* PocketCheckListV22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9BA431D1C5AD4007704A0 /* PocketCheckListV22.swift */; };
+		9B8E09801D9223DE006C3CD2 /* LogicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E097F1D9223DE006C3CD2 /* LogicCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3BC529121D133BB700D14D8C /* EPsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF73E581D7F8208002132CD /* ProcedureStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedureStep.swift; sourceTree = "<group>"; };
 		3BF9BA431D1C5AD4007704A0 /* PocketCheckListV22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PocketCheckListV22.swift; path = ../PocketCheckListV22.swift; sourceTree = "<group>"; };
+		9B8E097F1D9223DE006C3CD2 /* LogicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				3BC529031D133BB700D14D8C /* EPViewController.swift */,
 				3B55AA0C1D7C02D900D2AE7F /* MemoryStepCell.swift */,
 				3BBA3BB81D7FA3F00076ECA6 /* WarningCell.swift */,
+				9B8E097F1D9223DE006C3CD2 /* LogicCell.swift */,
 				3BBA3BBA1D7FA4080076ECA6 /* NoteCell.swift */,
 				3BC41ACF1D1357E800F429EA /* EPTableViewController.swift */,
 				3BC41ACD1D13529700F429EA /* EPTableViewCell.swift */,
@@ -222,6 +225,7 @@
 				3BC529041D133BB700D14D8C /* EPViewController.swift in Sources */,
 				3BBA3BBB1D7FA4080076ECA6 /* NoteCell.swift in Sources */,
 				3BBA3BB91D7FA3F00076ECA6 /* WarningCell.swift in Sources */,
+				9B8E09801D9223DE006C3CD2 /* LogicCell.swift in Sources */,
 				3BC41AD01D1357E800F429EA /* EPTableViewController.swift in Sources */,
 				3B55AA0D1D7C02D900D2AE7F /* MemoryStepCell.swift in Sources */,
 				3BC529021D133BB700D14D8C /* AppDelegate.swift in Sources */,

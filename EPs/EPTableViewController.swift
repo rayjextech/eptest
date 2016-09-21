@@ -27,12 +27,19 @@ class EPTableViewController: UITableViewController, UINavigationControllerDelega
                 var tmpProcStepArray = [ProcedureStep]()
                 let procStep1 = ProcedureStep(type: "warning", step: "A fire has been detected in the respective nacelle. The corresponding FIRE indicator light on the FIRE SUPPRESSION panel will illuminate.")
                 tmpProcStepArray.append(procStep1!)
-                let procStep2 = ProcedureStep(type: "note", step: "Bleed air or other hot gas leakage may trigger an engine fire warning without associated secondary indications. Bleed air or other hot gas leakage may trigger an engine fire warning without associated secondary indications. Bleed air or other hot gas leakage may trigger an engine fire warning without associated secondary indications. Bleed air or other hot gas leakage may trigger an engine fire warning without associated secondary indications. Bleed air or other hot gas leakage may trigger an engine fire warning without associated secondary indications. I am still talking about bleed air indications because this is a very long note, so so long.")
+                let procStep2 = ProcedureStep(type: "note", step: "Bleed air or other hot gas leakage may trigger an engine fire warning without associated secondary indications.")
                 tmpProcStepArray.append(procStep2!)
-               let procStep3 = ProcedureStep(type: "memoryStep", step: "*1. ECLs - OFF *1. ECLs - OFF *1. ECLs - OFF *1. ECLs - OFF *1. ECLs - OFF *1. ECLs - OFF *1. ECLs - OFF")
+               let procStep3 = ProcedureStep(type: "memoryStep", step: "*1. ECLs - OFF")
                 tmpProcStepArray.append(procStep3!)
                 let procStep4 = ProcedureStep(type: "memoryStep", step: "*2. T-Handle (affected engine) - ARM")
                 tmpProcStepArray.append(procStep4!)
+                let procStep5 = ProcedureStep(type: "logic", step: "If fire persists:")
+                tmpProcStepArray.append(procStep5!)
+                let procStep6 = ProcedureStep(type: "memoryStep", step: "*3. Discharge Button - Press")
+                tmpProcStepArray.append(procStep6!)
+                let procStep7 = ProcedureStep(type: "memoryStep", step: "*4. Emergency Shutdown - Execute ")
+                tmpProcStepArray.append(procStep7!)
+                
                 
                                 
                 
@@ -141,7 +148,7 @@ class EPTableViewController: UITableViewController, UINavigationControllerDelega
         return 2
     }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        tableView.backgroundColor = UIColor.yellow
+        //tableView.backgroundColor = UIColor.yellow
     }
     /* override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
      if(!EmergencyProceduresByLetter[section].isEmpty) {
