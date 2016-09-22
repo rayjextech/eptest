@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cXe-pv-3Y5" id="Atr-Ok-w9H" userLabel="containerView">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wum-ff-xgL">
@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q1Z-lB-hpu" id="fbT-fO-a8q">
-                                    <frame key="frameInset" width="375" height="88"/>
+                                    <frame key="frameInset" width="375" height="88.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WARNING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-Et-T6t">
@@ -94,13 +94,14 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="warningLabel" destination="jPn-aS-7TM" id="0Vi-O9-uch"/>
+                                    <outlet property="warningTitleLabel" destination="Qgf-Et-T6t" id="Nvi-Tz-mjX"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="note" rowHeight="83" id="r9b-eA-8Fj" customClass="NoteCell" customModule="EPs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="181" width="375" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r9b-eA-8Fj" id="KVf-3v-Xkr">
-                                    <frame key="frameInset" width="375" height="82"/>
+                                    <frame key="frameInset" width="375" height="82.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NOTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHN-AY-rNf">
@@ -126,16 +127,17 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="noteLabel" destination="MsA-yb-5hY" id="UPY-LM-z5J"/>
+                                    <outlet property="noteTitleLabel" destination="CHN-AY-rNf" id="NKM-Xk-gAV"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="memory" rowHeight="76" id="TcZ-JM-s7Z" customClass="MemoryStepCell" customModule="EPs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="264" width="375" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TcZ-JM-s7Z" id="M66-DM-uVk">
-                                    <frame key="frameInset" width="375" height="75"/>
+                                    <frame key="frameInset" width="375" height="75.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="memory Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmD-af-d5Z">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="memory step Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmD-af-d5Z">
                                             <frame key="frameInset" minX="8" minY="8" width="143" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -157,7 +159,7 @@
                                 <rect key="frame" x="0.0" y="340" width="375" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XXy-Sm-Dt5" id="bS3-H4-gjR">
-                                    <frame key="frameInset" width="375" height="75"/>
+                                    <frame key="frameInset" width="375" height="75.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="logic label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ0-R2-T31">
@@ -175,6 +177,64 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="logicLabel" destination="AZ0-R2-T31" id="C8w-Xo-2eV"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="caution" rowHeight="83" id="Xet-TL-d9Z" customClass="CautionCell" customModule="EPs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="416" width="375" height="83"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xet-TL-d9Z" id="ur2-SE-RMv">
+                                    <frame key="frameInset" width="375" height="82.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CAUTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnJ-X3-e7z">
+                                            <frame key="frameInset" minX="128" minY="8" width="65" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="caution label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay3-J3-Sna">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ay3-J3-Sna" secondAttribute="bottom" id="Aqo-Zm-eNk"/>
+                                        <constraint firstItem="hnJ-X3-e7z" firstAttribute="centerX" secondItem="ur2-SE-RMv" secondAttribute="centerX" id="FcY-28-w6G"/>
+                                        <constraint firstItem="ay3-J3-Sna" firstAttribute="top" secondItem="ur2-SE-RMv" secondAttribute="topMargin" constant="24" id="sDn-lG-0vN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ay3-J3-Sna" secondAttribute="trailing" id="wK0-gi-4UT"/>
+                                        <constraint firstItem="ay3-J3-Sna" firstAttribute="leading" secondItem="ur2-SE-RMv" secondAttribute="leadingMargin" id="x6L-Ky-1ut"/>
+                                        <constraint firstItem="ay3-J3-Sna" firstAttribute="top" secondItem="hnJ-X3-e7z" secondAttribute="bottom" constant="3" id="zyY-TA-iDC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cautionLabel" destination="ay3-J3-Sna" id="HQp-c1-gsN"/>
+                                    <outlet property="cautionTitleLabel" destination="hnJ-X3-e7z" id="0tF-3v-mn6"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="step" rowHeight="76" id="ikj-Ib-oH9" customClass="StepCell" customModule="EPs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="499" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ikj-Ib-oH9" id="Wl0-vQ-xtK">
+                                    <frame key="frameInset" width="375" height="75.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="step Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-TF-uLe">
+                                            <frame key="frameInset" minX="8" minY="8" width="143" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xpP-TF-uLe" firstAttribute="leading" secondItem="Wl0-vQ-xtK" secondAttribute="leadingMargin" constant="8" id="OYc-0K-7ts"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xpP-TF-uLe" secondAttribute="trailing" constant="8" id="Szg-Q3-Qtk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xpP-TF-uLe" secondAttribute="bottom" id="e7X-MP-mJv"/>
+                                        <constraint firstItem="xpP-TF-uLe" firstAttribute="top" secondItem="Wl0-vQ-xtK" secondAttribute="topMargin" id="kkB-h5-SSH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="stepLabel" destination="xpP-TF-uLe" id="07s-E1-dTM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
