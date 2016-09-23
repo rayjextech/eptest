@@ -39,7 +39,7 @@ class EPTableViewController: UITableViewController, UINavigationControllerDelega
                 tmpProcStepArray.append(procStep6!)
                 let procStep7 = ProcedureStep(type: "step", step: " 4. Emergency Shutdown - Execute")
                 tmpProcStepArray.append(procStep7!)
-                let procStep8 = ProcedureStep(type: "caution", step: "So tight bro. Shoots brah. Shoots")
+                let procStep8 = ProcedureStep(type: "caution", step: "So tight bro. Shoots brah. Shoots. Fishie swam away like shoots Ryan. You wan scrap bro?!")
                 tmpProcStepArray.append(procStep8!)
               
                 

@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // navigationBarAppearace.tintColor = UIColor.epComplement()
         navigationBarAppearace.barTintColor = UIColor.black
+        //navigationBarAppearace.tintColor = UIColor.orange
         
         // change navigation item title color
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.epYellow()]
-
+        //navigationBarAppearace.barStyle = UINav
+        //navigationBarAppearace.backItem
         
         return true
     }
