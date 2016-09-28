@@ -101,15 +101,10 @@
 				3BF73E581D7F8208002132CD /* ProcedureStep.swift */,
 				3BC529011D133BB700D14D8C /* AppDelegate.swift */,
 				3BC529031D133BB700D14D8C /* EPViewController.swift */,
-				3B55AA0C1D7C02D900D2AE7F /* MemoryStepCell.swift */,
-				3BBA3BB81D7FA3F00076ECA6 /* WarningCell.swift */,
-				3B82DC1C1D9490C70052537F /* CautionCell.swift */,
-				3BBA3BBA1D7FA4080076ECA6 /* NoteCell.swift */,
-				9B8E097F1D9223DE006C3CD2 /* LogicCell.swift */,
+				9B48FB901D9C7FBF00CF6FC4 /* Views */,
 				3BC41ACF1D1357E800F429EA /* EPTableViewController.swift */,
 				3BC41ACD1D13529700F429EA /* EPTableViewCell.swift */,
 				3BC529051D133BB700D14D8C /* Main.storyboard */,
-				3B2E9ACE1D9499AC0045CEF1 /* StepCell.swift */,
 				3BC5290A1D133BB700D14D8C /* LaunchScreen.storyboard */,
 				3BEB19531D1E43B20069C935 /* Supporting Files */,
 			);
@@ -122,6 +117,19 @@
 				3BC529081D133BB700D14D8C /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B48FB901D9C7FBF00CF6FC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B55AA0C1D7C02D900D2AE7F /* MemoryStepCell.swift */,
+				3BBA3BB81D7FA3F00076ECA6 /* WarningCell.swift */,
+				3B82DC1C1D9490C70052537F /* CautionCell.swift */,
+				3BBA3BBA1D7FA4080076ECA6 /* NoteCell.swift */,
+				9B8E097F1D9223DE006C3CD2 /* LogicCell.swift */,
+				3B2E9ACE1D9499AC0045CEF1 /* StepCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
