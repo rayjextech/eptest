@@ -141,7 +141,7 @@ class EPTableViewController: UITableViewController, UINavigationControllerDelega
         return index
     }
     override func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
-        return 2
+        return 1
     }
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
